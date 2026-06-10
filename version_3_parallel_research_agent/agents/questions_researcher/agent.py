@@ -41,12 +41,12 @@ base_description = load_instructions_file("agents/questions_researcher/descripti
 # Question Researcher 1 - Handles the first question from the questions list
 question_researcher_agent_1 = LlmAgent(
     name="QuestionResearcher1",  # Unique identifier for this specific researcher
-    model="gemini-flash-latest",    # AI model - Gemini 2.0 Flash for fast, high-quality responses
+    model="gemini-2.0-flash" ,   # AI model - Gemini 2.0 Flash for fast, high-quality responses
     # Combine question assignment with base instructions using f-string formatting
     instruction=f"You are assigned to answer QUESTION NUMBER 1 only.\n\n{base_instructions}",
     # Combine base description with specific role information
     description=f"{base_description} This agent specifically handles question #1.",
-    tools=[google_search],  # Google search tool for researching the assigned question
+    tools=[],  # Google search tool for researching the assigned question
     # Unique output key where this agent stores its research results
     output_key="question_1_research_output"
 )
@@ -54,12 +54,12 @@ question_researcher_agent_1 = LlmAgent(
 # Question Researcher 2 - Handles the second question from the questions list
 question_researcher_agent_2 = LlmAgent(
     name="QuestionResearcher2",  # Unique identifier for this specific researcher
-    model="gemini-flash-latest",    # AI model - Gemini 2.0 Flash for fast, high-quality responses
+    model="gemini-2.0-flash",   # AI model - Gemini 2.0 Flash for fast, high-quality responses
     # Combine question assignment with base instructions using f-string formatting
     instruction=f"You are assigned to answer QUESTION NUMBER 2 only.\n\n{base_instructions}",
     # Combine base description with specific role information
     description=f"{base_description} This agent specifically handles question #2.",
-    tools=[google_search],  # Google search tool for researching the assigned question
+    tools=[],  # Google search tool for researching the assigned question
     # Unique output key where this agent stores its research results
     output_key="question_2_research_output"
 )
@@ -67,12 +67,12 @@ question_researcher_agent_2 = LlmAgent(
 # Question Researcher 3 - Handles the third question from the questions list
 question_researcher_agent_3 = LlmAgent(
     name="QuestionResearcher3",  # Unique identifier for this specific researcher
-    model="gemini-flash-latest",    # AI model - Gemini 2.0 Flash for fast, high-quality responses
+    model="gemini-2.0-flash",    # AI model - Gemini 2.0 Flash for fast, high-quality responses
     # Combine question assignment with base instructions using f-string formatting
     instruction=f"You are assigned to answer QUESTION NUMBER 3 only.\n\n{base_instructions}",
     # Combine base description with specific role information
     description=f"{base_description} This agent specifically handles question #3.",
-    tools=[google_search],  # Google search tool for researching the assigned question
+    tools=[],  # Google search tool for researching the assigned question
     # Unique output key where this agent stores its research results
     output_key="question_3_research_output"
 )
@@ -80,12 +80,12 @@ question_researcher_agent_3 = LlmAgent(
 # Question Researcher 4 - Handles the fourth question from the questions list
 question_researcher_agent_4 = LlmAgent(
     name="QuestionResearcher4",  # Unique identifier for this specific researcher
-    model="gemini-flash-latest",    # AI model - Gemini 2.0 Flash for fast, high-quality responses
+    model="gemini-2.0-flash",    # AI model - Gemini 2.0 Flash for fast, high-quality responses
     # Combine question assignment with base instructions using f-string formatting
     instruction=f"You are assigned to answer QUESTION NUMBER 4 only.\n\n{base_instructions}",
     # Combine base description with specific role information
     description=f"{base_description} This agent specifically handles question #4.",
-    tools=[google_search],  # Google search tool for researching the assigned question
+    tools=[],  # Google search tool for researching the assigned question
     # Unique output key where this agent stores its research results
     output_key="question_4_research_output"
 )
@@ -93,12 +93,12 @@ question_researcher_agent_4 = LlmAgent(
 # Question Researcher 5 - Handles the fifth question from the questions list
 question_researcher_agent_5 = LlmAgent(
     name="QuestionResearcher5",  # Unique identifier for this specific researcher
-    model="gemini-flash-latest",    # AI model - Gemini 2.0 Flash for fast, high-quality responses
+    model="gemini-2.0-flash",   # AI model - Gemini 2.0 Flash for fast, high-quality responses
     # Combine question assignment with base instructions using f-string formatting
     instruction=f"You are assigned to answer QUESTION NUMBER 5 only.\n\n{base_instructions}",
     # Combine base description with specific role information
     description=f"{base_description} This agent specifically handles question #5.",
-    tools=[google_search],  # Google search tool for researching the assigned question
+    tools=[],  # Google search tool for researching the assigned question
     # Unique output key where this agent stores its research results
     output_key="question_5_research_output"
 )

@@ -34,7 +34,7 @@ questions_generator_agent = LlmAgent(
     name = "questions_generator_agent",
     
     # AI model to use - Gemini 2.0 Flash for fast, high-quality responses
-    model = "gemini-flash-latest",
+    model="gemini-2.0-flash",
     
     # Load detailed instructions from external text file
     # This keeps the code clean and allows easy modification of agent behavior
@@ -46,7 +46,9 @@ questions_generator_agent = LlmAgent(
     
     # Tools available to this agent - Google search for researching topics
     # This allows the agent to gather current information before generating questions
-    tools=[google_search],
+
+    tools=[],
+    #tools=[],
     
     # Output key - where this agent stores its results in the session state
     # Other agents in the pipeline will reference this key to access the generated questions
